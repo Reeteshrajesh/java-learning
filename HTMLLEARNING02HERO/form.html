@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<body>
+    <fieldset> <!-- use for border in full form -->
+        <legend> ENQUIRY FORM</legend> <!-- use for heading design -->
+        <form action="" method="">
+            <label>GEnder</label><br>
+            <input type="radio" value="male" name="gender"> male
+            <input type="radio" value="female" name="gender"> female
+            <!-- radio use for selection only one -->
+            <br>
+            <label>Name</label><br>
+            <input type="text" pattern="[a-zA-Z ]{3,40}" placeholder="Enter your name" name="uname" /><br>
+            <br>
+
+            <label>Course</label><br>
+            <input type="checkbox" value="php" />php <br>
+            <input type="checkbox" value="c" />C <br>
+            <input type="checkbox" value="c++" />C++ <br>
+            <input type="checkbox" value="java" />java <br>
+            <input type="checkbox" value="javascript" />javascript
+            <br>
+            <!-- checkbox use for selectiog more than one  -->
+
+            <label>Email</label> <br>
+            <input type="email" placeholder="Enter your email" name="ename"><br>
+
+            <label>phone</label><br>
+            <input type="tel" pattern="[0-9]{10}" placeholder="Enter your mo no" title="Enter valid mo no" name="mname">
+            <br>
+
+            <label>message</label><br>
+            <textarea></textarea><br>
+
+            <label>PHOTO</label> <br>
+            <input type="file"> <br>
+            <!-- pattern doondana hai ki kuc=hh specific tyoe of file in upload kar paye -->
+            <br>
+
+            <label>password</label> <br>
+            <input type="password">
+            <br><br>
+            <!-- dropdown -->
+            <label>Country</label> <br>
+            <select>
+                <option>-------select Country----</option>
+                <option value="India">India</option>
+                <option value="India1">India1</option>
+                <option value="India2">India2</option>
+                <option value="India3">India3</option>
+                <option value="India4">India4</option>
+                <option value="India5">India5</option>
+                <option value="India6">India6</option>
+                <option value="India7">India7</option>
+            </select>
+            <br>
+            <br>
+
+
+
+            <!-- option group -->
+
+            <label>Course</label><br>
+            <select>
+                <optgroup label="Frontend">
+                    <option value="">html</option>
+                    <option value="">css</option>
+                    <option value="">js</option>
+                </optgroup>
+                <optgroup label="backend">
+                    <option value="">html</option>
+                    <option value="">css</option>
+                    <option value="">js</option>
+                </optgroup>
+            </select>
+            <br>
+            <br>
+            QTY <br>
+            <input type="number" min="1" max="100"> <br>
+            <br>
+
+            Date <br>
+            <input type="date"> <br>
+            <br>
+            Time <br>
+            <input type="time"> <br>
+            <br>
+            week <br>
+            <input type="week" /> <br>
+            <br>
+            month <br>
+            <input type="month"> <br>
+
+            <br>
+            Time <br>
+            <input type="color"> <br>
+
+            name <br>
+            <input type="text" required minlength="5" maxlength="15" name=""> <br>
+            <br>
+            URL <br>
+            <input type="url"> <br>
+            Range <br>
+            <input type="range"> <br>
+            <br>
+            <input type="text" list="Course">
+            <datalist id="Course">
+                <option value="php">
+                <option value="html">
+                <option value="java">
+                <option value="js">
+                <option value="C">
+                <option value="C++">
+
+
+            </datalist>
+            <br>
+            <br>
+
+            <button type="submit">Save</button>
+            <button type="reset">Reset</button>
+            <button type="button">button</button>
+            <input type="submit" value="GO">
+        </form>
+    </fieldset>
+</body>
+
+</html>
